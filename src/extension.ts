@@ -32,7 +32,7 @@ export function activate(context: vscode.ExtensionContext) {
 			cancellable: false,
 			title: "Flow Bot is thinking...",
 		}, async(progress) => {
-			progress.report({increment: 0});
+			progress.report({increment: 50});
 			res = await axios.get("https://flow-gpt-server.onrender.com/ask", {
 				params: {
 					"query": userQuery
@@ -55,11 +55,6 @@ export function activate(context: vscode.ExtensionContext) {
 		// Set the HTML content for the webview
 		panel.webview.html = getWebviewContent(userQuery!, answer);
 
-		// const answer = vscode.window.showInformationMessage('Hey there some random text!!!');
-
-
-
-
 	});
 
 	context.subscriptions.push(disposable);
@@ -68,13 +63,20 @@ export function activate(context: vscode.ExtensionContext) {
 const getWebviewContent = (question: string, answer: string) => {
 	return `
 		<html>
-		<body>
+		<style>
+			.content {
+				width: 90%;
+				word-wrap: break-word;
+				overflow: auto;
+			}
+		</style>
+		<body class="content">
 			<h2>${question}</h2>
-			<pre>${answer}</pre>
+			<div>${answer}</div>
 		</body>
 		</html>
 	`;
-}
+} 
 
 // This method is called when your extension is deactivated
 export function deactivate() {}

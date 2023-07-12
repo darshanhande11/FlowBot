@@ -3,6 +3,7 @@
   "displayName": "Flow Bot",
   "description": "Flow Bot is the go to chat bot for anything and everything related to Flow. It is trained on Flow's Docs and will help you with all your Flow related quries.",
   "version": "0.0.1",
+  "publisher": "darshanhande11",
   "engines": {
     "vscode": "^1.80.0"
   },
@@ -42,5 +43,9 @@
   },
   "dependencies": {
     "axios": "^1.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/darshanhande11/FlowBot"
   }
 }

@@ -1,7 +1,7 @@
 # FlowBot
 
 ## What is it?
-FlowBot will help you out with all the queries related to Flow. It is trained on the Flow's Documentation. So, whenever you have any doubt or query or you are struck on something and feels like  browsing through the documentation is overwhelming. Just ask your query out to Flow-Bot. Flow-Bot will provide you with relevant steps and information.
+FlowBot will help you out with all the queries related to Flow. It is trained on the Flow's Documentation. So, whenever you have any doubt or query or you are struck on something and feels like  browsing through the documentation is overwhelming. Just ask your query out to Flow-Bot. Flow-Bot will provide you with relevant steps and information. It can be installed as a VS Code Extension from [here].(https://marketplace.visualstudio.com/items?itemName=darshanhande11.flow-bot&ssr=false#overview)
 
 ## How to use it?
 1. Press `Ctrl + Shift + P` (for windows/linux) or `Cmd + Shift + P` (for macOS) to open the Command Palette.
